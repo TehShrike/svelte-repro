@@ -1,0 +1,19 @@
+{
+  "name": "svelte-repro",
+  "version": "1.0.0",
+  "description": "[![NPM](https://nodei.co/npm/svelte-repro.png)](https://nodei.co/npm/svelte-repro/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehShrike/svelte-repro.git"
+  },
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/svelte-repro/issues"
+  },
+  "homepage": "https://github.com/TehShrike/svelte-repro#readme"
+}
