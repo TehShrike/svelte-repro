@@ -1,0 +1,18 @@
+{{#each list as item}}
+	<p>
+		<HoverMirror identifier="{{item}}" bind:currentIdentifier>
+			{{item}}
+		</HoverMirror>
+	</p>
+{{/each}}
+
+<script>
+export default {
+	data: () => ({
+		list: [1, 2, 3, 2, 1]
+	}),
+	components: {
+		HoverMirror
+	}
+}
+</script>

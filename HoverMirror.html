@@ -1,0 +1,22 @@
+<span
+	on:mouseenter="set({ currentIdentifier: identifier })"
+	on:mouseleave="set({ currentIdentifier: null })"
+	data-currently-hovered="{{currentlyHovered}}"
+	data-identifier="{{identifier}}"
+>
+	{{yield}}
+</span>
+
+<style>
+[data-currently-hovered=true] {
+	background-color: yellow;
+}
+</style>
+
+<script>
+export default {
+	computed: {
+		currentlyHovered: (currentIdentifier, identifier) => currentIdentifier === identifier
+	}
+}
+</script>

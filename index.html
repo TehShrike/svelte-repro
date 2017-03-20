@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Svelte issue reproduction</title>
+	</head>
+	<body>
+		<div id="target"></div>
+		<script src="./test-dep.js"></script>
+		<script src="./intermediate-component.js"></script>
+		<script src="./intermediate2.js"></script>
+		<script src="./test-component.js"></script>
+		<script>
+			const element = document.querySelector('#target')
+
+			const component = new TestComponent({
+				target: element
+			})
+		</script>
+	</body>
+</html>
