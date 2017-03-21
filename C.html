@@ -1,0 +1,30 @@
+<span
+	on:click="toggle()"
+	data-currently-selected="{{isCurrentlySelected}}"
+	data-identifier="{{identifier}}"
+>
+	{{yield}}
+</span>
+
+<style>
+[data-currently-selected=true] {
+	background-color: yellow;
+}
+</style>
+
+<script>
+export default {
+	computed: {
+		isCurrentlySelected: (currentIdentifier, identifier) => currentIdentifier === identifier
+	},
+	methods: {
+		toggle() {
+			const isCurrentlySelected = this.get('isCurrentlySelected')
+
+			this.set({
+				currentIdentifier: isCurrentlySelected ? null : this.get('identifier')
+			})
+		}
+	}
+}
+</script>

@@ -5,14 +5,14 @@
 	</head>
 	<body>
 		<div id="target"></div>
-		<script src="./test-dep.js"></script>
-		<script src="./intermediate-component.js"></script>
-		<script src="./intermediate2.js"></script>
-		<script src="./test-component.js"></script>
+		<script src="./c.js"></script>
+		<script src="./b.js"></script>
+		<script src="./a.js"></script>
+		<script src="./root.js"></script>
 		<script>
 			const element = document.querySelector('#target')
 
-			const component = new TestComponent({
+			const component = new Root({
 				target: element
 			})
 		</script>

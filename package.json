@@ -4,11 +4,11 @@
   "description": "[![NPM](https://nodei.co/npm/svelte-repro.png)](https://nodei.co/npm/svelte-repro/)",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:dep && npm run build:main && npm run build:intermediate && npm run build:intermediate2",
-    "build:main": "svelte compile -f umd -n TestComponent TestComponent.html -o test-component.js",
-    "build:intermediate": "svelte compile -f umd -n IntermediateComponent IntermediateComponent.html -o intermediate-component.js",
-    "build:intermediate2": "svelte compile -f umd -n EvenMoreIntermediate EvenMoreIntermediate.html -o intermediate2.js",
-    "build:dep": "svelte compile -f umd -n HoverMirror HoverMirror.html -o test-dep.js"
+    "build": "npm run build:root && npm run build:a && npm run build:b && npm run build:c",
+    "build:root": "svelte compile -f umd -n Root Root.html -o root.js",
+    "build:a": "svelte compile -f umd -n A A.html -o a.js",
+    "build:b": "svelte compile -f umd -n B B.html -o b.js",
+    "build:c": "svelte compile -f umd -n C C.html -o c.js"
   },
   "repository": {
     "type": "git",
